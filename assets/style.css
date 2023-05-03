@@ -21,7 +21,6 @@
     position: relative;
 }
 
-
 .container_header {
     display: flex;
     justify-content: space-between;
@@ -39,7 +38,7 @@ header .logo_img {
     margin-top: 6px;
 }
 
-.buttons li a{
+.buttons li a {
     cursor: pointer;
     font-size: 20px;
     margin: 0 10px;
@@ -48,7 +47,6 @@ header .logo_img {
     color: #141414;
     position: relative;
 }
-
 
 .buttons li a::after {
     content: '';
@@ -60,13 +58,11 @@ header .logo_img {
     background-color: #141414;
     transition: 0.2s;
 }
-
+  
 .buttons li a:hover::after {
     left: 0;
     width: 100%;
 }
-
-/* section */
 
 section {
   height: 100vh;
