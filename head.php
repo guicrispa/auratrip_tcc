@@ -22,8 +22,5 @@
     <meta name="google-site-verification" content="z_lH9tH0wbjtMz-3Gxh-qzwu25t_HTu6qWTVMIgMeiQ" />
     <title>Auratrip</title>
     <link rel="icon" href="#">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    
-</body>
-</html>
