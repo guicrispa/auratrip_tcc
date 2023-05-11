@@ -64,7 +64,87 @@ header .logo_img {
     width: 100%;
 }
 
+/* section */
+
 section {
-  height: 100vh;
-  background: #bbb;
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+/* search bar */
+
+#search {
+    background: #f3fafa;
+    opacity: 0.3;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 80%;
+    margin: auto;
+    float: left;
+    padding: 8px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid #000;
+}
+
+#buscar {
+    width: 20%;
+    float: right;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 15px;
+    padding: 9px;
+    color: #fff;
+    background: #03AB99;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+/* footer */
+
+footer {
+    background: #022928;
+    padding: 30px 80px;
+    color: #f3fafa;
+    border-top: 5px solid #03AB99;
+}
+
+footer p,
+.teste {
+    text-align: center;
+    font-weight: 600;
+}
+
+footer p ion-icon {
+    background: #272a2f;
+    color: #fff;
+    padding: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    font-size: 26px;
+    margin: 0 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+footer p a ion-icon:hover {
+    background: #fff;
+    color: #272a2f;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/* section copyright */
+
+.copyright {
+    border-top: 1px solid #03AB99;
+}
+.copyright, .copyright p {
+    background: #272a2f;
+    padding: 2px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
 }
