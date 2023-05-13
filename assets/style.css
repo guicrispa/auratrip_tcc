@@ -1,38 +1,48 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+/*
+    responsividade
+    320px — 480px: dispositivos móveis
+    481px — 768px: iPads, tablets
+    769px — 1024px: telas pequenas, laptops
+    1025px — 1200px: desktops, telas grandes
+    1201px e acima —  telas muito grandes, TVs
+*/
+
+@media (min-width: 1025px) {}
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
-/* button go to top page */
-
-#myBtn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
-  right: 30px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
-  border: none; /* Remove borders */
-  outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
-  color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+/*skip to main content button - https://www.freecodecamp.org/news/how-to-add-skip-to-main-content-links-to-a-website/#:~:text=The%20skip%2Dto%2Dmain%2Dcontent%20link%20is%20an%20ordinary,content%20on%20the%20web%20page.*/
+.skip-to-main-content-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999;
+  padding: 1em;
+  color: white;
+  background: rgba(0, 0, 0, 0.4)
 }
 
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+.skip-to-main-content-link:focus {
+  left: 0;
+  transform: translateX(20%);
+  opacity: 1;
 }
 
 /* header and banner */
 
 #main {
   background-image: url("reynisfjara.png");
+}
+
+#norway {
+  background-image: url("https://res.cloudinary.com/dlsuopwkn/image/upload/v1672413298/norway_banner.jpg");
 }
 
 .style_header {
@@ -43,6 +53,7 @@
   background-position: center;
   padding: 0 8%;
   position: relative;
+  border-bottom: 5px solid #03ab99;
 }
 
 .container_header {
@@ -57,8 +68,8 @@ header .buttons {
 }
 
 header .logo_img {
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   margin-top: 6px;
 }
 
@@ -66,7 +77,7 @@ header .logo_img {
   cursor: pointer;
   font-size: 20px;
   margin: 0 10px;
-  font-weight: 500;
+  font-weight: 600;
   text-decoration: none;
   color: #141414;
   position: relative;
@@ -79,7 +90,7 @@ header .logo_img {
   left: 50%;
   width: 0%;
   height: 3px;
-  background-color: #141414;
+  background-color: #03ab99;
   transition: 0.2s;
 }
 
@@ -88,16 +99,11 @@ header .logo_img {
   width: 100%;
 }
 
-/* section */
-
-section {
-  background: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-
 /* search bar */
+
+.pesquisabutton {
+  margin-top: 10px;
+}
 
 #search {
   background: #f3fafa;
@@ -125,6 +131,42 @@ section {
   cursor: pointer;
   outline: none;
   border: none;
+}
+
+/* section cards*/
+
+section {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#section_cards {
+  background: linear-gradient(145deg, #f3f4f7, #ecedf0);
+}
+
+.title_cards h1 {
+  text-align: center;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.presentation {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 15px 0;
+}
+
+.presentation .card {
+  margin: 15px 0;
+}
+
+/* para os cards em desktop tela menor e/ou notebook */
+
+@media (min-width: 1025px) {
+  .presentation {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 /* footer */
@@ -165,6 +207,7 @@ footer p a ion-icon:hover {
 .copyright {
   border-top: 1px solid #03ab99;
 }
+
 .copyright,
 .copyright p {
   background: #272a2f;
