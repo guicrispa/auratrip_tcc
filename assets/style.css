@@ -1,91 +1,91 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800;900;1000&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 /* button go to top page */
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: red; /* Set a background color */
-    color: white; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-  }
-  
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
-  }
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
 
-  /* header and banner */
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* header and banner */
 
 #main {
-    background-image: url('reynisfjara.png');
+  background-image: url("reynisfjara.png");
 }
 
 .style_header {
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    /* vai deixar a imagem cobrindo a tela toda*/
-    background-position: center;
-    padding: 0 8%;
-    position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  /* vai deixar a imagem cobrindo a tela toda*/
+  background-position: center;
+  padding: 0 8%;
+  position: relative;
 }
 
 .container_header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header .buttons {
-    display: flex;
-    list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 header .logo_img {
-    width: 100px;
-    height: 100px;
-    margin-top: 6px;
+  width: 100px;
+  height: 100px;
+  margin-top: 6px;
 }
 
 .buttons li a {
-    cursor: pointer;
-    font-size: 20px;
-    margin: 0 10px;
-    font-weight: 500;
-    text-decoration: none;
-    color: #141414;
-    position: relative;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 0 10px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #141414;
+  position: relative;
 }
 
 .buttons li a::after {
-    content: '';
-    bottom: 0;
-    position: absolute;
-    left: 50%;
-    width: 0%;
-    height: 3px;
-    background-color: #141414;
-    transition: 0.2s;
+  content: "";
+  bottom: 0;
+  position: absolute;
+  left: 50%;
+  width: 0%;
+  height: 3px;
+  background-color: #141414;
+  transition: 0.2s;
 }
-  
+
 .buttons li a:hover::after {
-    left: 0;
-    width: 100%;
+  left: 0;
+  width: 100%;
 }
 
 /* section */
@@ -100,75 +100,137 @@ section {
 /* search bar */
 
 #search {
-    background: #f3fafa;
-    opacity: 0.3;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    width: 80%;
-    margin: auto;
-    float: left;
-    padding: 8px;
-    font-size: 15px;
-    outline: none;
-    border: 1px solid #000;
+  background: #f3fafa;
+  opacity: 0.3;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  width: 80%;
+  margin: auto;
+  float: left;
+  padding: 8px;
+  font-size: 15px;
+  outline: none;
+  border: 1px solid #000;
 }
 
 #buscar {
-    width: 20%;
-    float: right;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    font-size: 15px;
-    padding: 9px;
-    color: #fff;
-    background: #03AB99;
-    cursor: pointer;
-    outline: none;
-    border: none;
+  width: 20%;
+  float: right;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 15px;
+  padding: 9px;
+  color: #fff;
+  background: #03ab99;
+  cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 /* footer */
 
 footer {
-    background: #022928;
-    padding: 30px 80px;
-    color: #f3fafa;
-    border-top: 5px solid #03AB99;
+  background: #022928;
+  padding: 30px 80px;
+  color: #f3fafa;
+  border-top: 5px solid #03ab99;
 }
 
 footer p,
 .teste {
-    text-align: center;
-    font-weight: 600;
+  text-align: center;
+  font-weight: 600;
 }
 
 footer p ion-icon {
-    background: #272a2f;
-    color: #fff;
-    padding: 15px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
-    font-size: 26px;
-    margin: 0 10px;
-    margin-top: 20px;
-    border-radius: 6px;
+  background: #272a2f;
+  color: #fff;
+  padding: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  font-size: 26px;
+  margin: 0 10px;
+  margin-top: 20px;
+  border-radius: 6px;
 }
 
 footer p a ion-icon:hover {
-    background: #fff;
-    color: #272a2f;
-    transition: 0.5s;
-    cursor: pointer;
+  background: #fff;
+  color: #272a2f;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 /* section copyright */
 
 .copyright {
-    border-top: 1px solid #03AB99;
+  border-top: 1px solid #03ab99;
 }
-.copyright, .copyright p {
-    background: #272a2f;
-    padding: 2px;
-    text-align: center;
-    color: #fff;
-    font-weight: 600;
+.copyright,
+.copyright p {
+  background: #272a2f;
+  padding: 2px;
+  text-align: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* testes everson 
+.teste {
+  background-color: aqua;
+  margin: 10px;
+  color: orange;
+  border-radius: 10px;
+}
+
+.teste   {
+  background-color: blue;
+}
+
+.teste:focus {
+  background-color: black;
+}
+*/
+
+/* Tela posPost */
+
+.exemplo-post {
+  text-align: left;
+}
+
+.exemplo-post img {
+  max-width: 500px;
+  max-height: 400px;
+  width: auto;
+  height: auto;
+}
+
+.exemplo-post fieldset {
+  background-color: #d3d0d0;
+}
+
+.exemplo-post legend {
+  text-align: left;
+}
+
+/* like button */
+
+#like {
+  background-color: #03ab99;
+  font-size: 10px;
+  border-style: none;
+  border-radius: 10px;
+  width: 30px;
+  height: 20px;
+}
+
+#like:hover {
+  background-color: #1a9b8e;
+  border-style: none;
+  border-radius: 10px;
+}
+
+#like:focus {
+  background-color: #06665c;
+  border-style: none;
+  border-radius: 10px;
 }
