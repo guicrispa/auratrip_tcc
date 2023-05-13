@@ -45,6 +45,12 @@
   background-image: url("https://res.cloudinary.com/dlsuopwkn/image/upload/v1672413298/norway_banner.jpg");
 }
 
+#iceland_contact {
+  background-image: url("https://res.cloudinary.com/dlsuopwkn/image/upload/v1672442180/Reynisfjara_tjrp7n.jpg");
+}
+
+/* banner texto título efeito https://www.youtube.com/watch?v=rc50owRPdUI&pp=ygUVc3R5bGUgY3NzIHRleHQgYmFubmVy */
+
 .style_header {
   width: 100%;
   height: 100vh;
