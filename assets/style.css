@@ -157,6 +157,12 @@ section {
   padding: 15px 0;
 }
 
+.presentation_country {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 15px 0;
+}
+
 .presentation .card {
   margin: 15px 0;
 }
