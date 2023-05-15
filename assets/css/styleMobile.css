@@ -1,0 +1,10 @@
+@media (max-width: 480px) {
+    .presentation {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    .presentation .card {
+        margin: auto;
+        margin-top: 15px;
+    }
+  }
