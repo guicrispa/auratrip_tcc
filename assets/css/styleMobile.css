@@ -1,4 +1,28 @@
 @media (max-width: 480px) {
+
+    .menucell {
+      display: inherit;
+      float: right;
+      font-size: 50px;
+      line-height: 2.2;
+    }
+
+    .container_header {
+      display: inherit;
+    }
+
+    .style_header {
+      padding: 0 4%;
+    }
+
+    .buttons {
+      display: none !important;
+    }
+
+    .pesquisabutton {
+      display: none;
+    }
+
     .presentation {
       grid-template-columns: repeat(1, 1fr);
     }

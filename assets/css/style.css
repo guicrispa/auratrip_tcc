@@ -37,6 +37,10 @@
 
 /* header and banner */
 
+.menucell {
+  display: none;
+}
+
 #main {
   background-image: url("../images/reynisfjara.png");
 }
@@ -170,8 +174,11 @@ section {
 }
 
 .presentation .card {
-  margin: 15px 0;
+  transition: all 0.1s ease;
+  cursor: pointer;
 }
+
+
 
 /* para os cards em desktop tela menor e/ou notebook */
 
