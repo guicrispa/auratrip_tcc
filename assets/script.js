@@ -20,23 +20,3 @@ function topFunction() {
 
 // card tilt hover effect 
 
-const card = document.querySelectorAll('.card')
-const titlMove = (x, y) => `perspective(50px) scale(1.1) rotateX(${x}deg) rotateY(${y}deg)`
-
-card.forEach(card => {
-  const height = card.clientHeight
-  const width = card.clientWidth
-
-  card.addEventListener('mousemove', (e) => {
-    const x = 0
-    const y = 0
-    const multiplier = 2
-
-    const xRotate = multiplier * ((x-width/2)/width)
-    const yRotate = multiplier * ((x-height/2)/height)
-
-    card.style.transform = titlMove(xRotate, yRotate)
-  })
-
-  card.addEventListener('mouseout', () => card.style.transform = titlMove(0, 0))
-})
