@@ -44,10 +44,10 @@
       <h1 class="title_tromso">Postar</h1>
     </header>
     
-    <section id="section_cards">
+    <section id="section_cards" class="section_postar">
       <div class="container">
         <div class="title_cards"><h1>Criar Postagem</h1></div>
-        <form action="posContato.html" method="POST">
+        <form id="formulario" action="posContato.html" method="POST">
             <div class="postagem">
                 <label for="titulo">Título:</label>
                 <input type="text" id="titulo" name="titulo" required>
@@ -57,6 +57,10 @@
                   <label for="image">Selecione uma imagem:</label>
                   <input type="file" id="image" name="image">
                 </div>
+            </div>
+            <div class="postagem">
+              <label for="titulo">Descrição:</label>
+              <input type="text" id="titulo" name="titulo" required style="height: 400px;">
             </div>
             <div class="postagem">
                 <button type="submit">Postar</button>

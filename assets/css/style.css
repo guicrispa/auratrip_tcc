@@ -307,6 +307,50 @@ section {
   font-size: 14px;
 }
 
+/* section postar */
+
+.section_postar .container {
+  max-width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.section_postar .title_cards {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section_postar .postagem {
+  margin-bottom: 20px;
+}
+
+.section_postar .postagem label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.section_postar .postagem input[type="text"],
+.section_postar .postagem input[type="file"],
+.section_postar .postagem button {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.section_postar .postagem button {
+  background-color: #03ab99;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.section_postar .postagem button:hover {
+  background-color: #10c2b0;
+  transition: 0.5s;
+}
 
 /* para os cards em desktop tela menor e/ou notebook */
 
