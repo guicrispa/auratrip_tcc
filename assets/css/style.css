@@ -42,7 +42,7 @@
 }
 
 #main {
-  background-image: url("../images/reynisfjara.png");
+  background-image: url("https://res.cloudinary.com/dlsuopwkn/image/upload/v1685759097/auratrip_jnv32f.jpg");
 }
 
 #norway {
@@ -51,6 +51,18 @@
 
 #iceland_contact {
   background-image: url("https://res.cloudinary.com/dlsuopwkn/image/upload/v1672442180/Reynisfjara_tjrp7n.jpg");
+}
+
+#tromso {
+  background-image: url("https://res.cloudinary.com/dlsuopwkn/image/upload/v1685757412/tromso_banner.jpg");
+}
+
+#kjerag {
+  background-image: url("https://res.cloudinary.com/dlsuopwkn/image/upload/v1685760356/kjerag.jpg");
+}
+
+#tromso li a {
+  color: #fff;
 }
 
 /* banner texto título efeito https://www.youtube.com/watch?v=rc50owRPdUI&pp=ygUVc3R5bGUgY3NzIHRleHQgYmFubmVy */
@@ -116,17 +128,22 @@ header .logo_img {
 }
 
 #search {
-  background: #f3fafa;
-  opacity: 0.3;
+  background: #000;
+  opacity: 0.6;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   width: 80%;
   margin: auto;
   float: left;
+  color: white;
   padding: 8px;
   font-size: 15px;
   outline: none;
   border: 1px solid #000;
+}
+
+#search::placeholder {
+  color: white;
 }
 
 #buscar {
@@ -137,10 +154,67 @@ header .logo_img {
   font-size: 15px;
   padding: 9px;
   color: #fff;
-  background: #03ab99;
+  background: #049c8d;
   cursor: pointer;
   outline: none;
   border: none;
+}
+
+#buscar:hover {
+  background: #03ab99;
+  transition: 0.5s;
+}
+
+/* teste animação título */
+
+.title_black {
+  margin-top: 100px;
+  font-size: 198px;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideMain 3s forwards;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000;
+  user-select: none;
+
+}
+
+@keyframes slideMain {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* animação norway e Tromso*/
+
+.title_tromso {
+  font-size: 178px;
+  opacity: 0;
+  transform: translateY(100%);
+  animation: slideIn 3s forwards;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  text-stroke: 1px #fff;
+  user-select: none;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* section cards*/
@@ -176,8 +250,62 @@ section {
 .presentation .card {
   transition: all 0.1s ease;
   cursor: pointer;
+  margin-top: 15px;
 }
 
+.presentation .card:hover, .presentation_country .card:hover {
+  background: #03ab99;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.presentation .card:hover > .card-title {
+  color: #fff;
+}
+
+.card h5 {
+  color: black;
+  text-decoration: none;
+}
+
+/* kjeragbolten */
+
+.comment-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.comment .user img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.comment {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 6px;
+  width: 300px;
+  margin: 0 10px;
+}
+
+.comment .user {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.comment .rating {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.comment .message {
+  font-size: 14px;
+}
 
 
 /* para os cards em desktop tela menor e/ou notebook */
